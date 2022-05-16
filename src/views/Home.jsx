@@ -22,10 +22,8 @@ const Home = () => {
   return (
     <section className="home">
       <h1>Hi, my name is</h1>
-      <div className="row">
-        <h2 className="accentColor">doVe</h2>
-        <sup>(well, not really.)</sup>
-      </div>
+      <h2 className="accentColor">doVe</h2>
+      <sup>(well, not really.)</sup>
       {/* ADD ANIMATION */}
       <h3>
         I sometimes build stuff for{' '}
