@@ -6,8 +6,11 @@
   h3 {
     font-size: 4em;
   }
-  .accent-color {
+  .accentColor {
     color: hotpink;
+    &.platformText {
+      font-family: monospace;
+    }
   }
   a.btn {
     color: hotpink;
@@ -15,5 +18,8 @@
     border: 0.5px solid #ffce30;
     border-radius: 5px;
     padding: 0.5em;
+  }
+  sup {
+    font-style: italic;
   }
 }
