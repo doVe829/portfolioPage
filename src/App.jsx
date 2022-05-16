@@ -1,17 +1,16 @@
-import { useState } from 'react';
-import logo from './logo.svg';
-// import './App.css';
 import Home from './views/Home.jsx';
 import Header from './views/Header.jsx';
+import About from './views/About';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
       <Header />
       <div className="container">
-        <Home />
+        <main>
+          <Home />
+          <About />
+        </main>
       </div>
     </div>
   );

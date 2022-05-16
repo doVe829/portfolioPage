@@ -14,25 +14,19 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <main>
-      <section className="home">
-        <h1>Hi, my name is</h1>
-        <h2 className="accent-color">doVe</h2>
-        <h3>I sometimes build stuff for {showTest}</h3>
-        {/* rotaing on the web/desktop etc? */}
-        <p className="col-sm-3">
-          I'm a web developer based in germany, that is currently working on
-          great tourism experiences at WORKNAME
-        </p>
-        <button>Get to know me!</button>
-        {/* <div className="slottt-machine-recipe">
-          <div className="slottt-machine-recipe__mask" id="wordbox">
-            <div className="slottt-machine-recipe__items_container recipe_if">
-            </div>
-          </div>
-        </div> */}
-      </section>
-    </main>
+    <section className="home">
+      <h1>Hi, my name is</h1>
+      <h2 className="accent-color">doVe</h2>
+      {/* ADD ANIMATION */}
+      <h3>I sometimes build stuff for {showTest}</h3>
+      <p className="col-sm-3">
+        I'm a web developer based in germany, that is currently working on great
+        tourism experiences at WORKNAME
+      </p>
+      <a className="btn" href="#section-about">
+        Get to know me!
+      </a>
+    </section>
   );
 };
 
