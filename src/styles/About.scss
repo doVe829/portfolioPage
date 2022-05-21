@@ -1,6 +1,7 @@
-// about style stuff
+@use 'variables';
+
 section#section-about {
   h2 {
-    color: hotpink;
+    color: variables.$main-colour;
   }
 }
