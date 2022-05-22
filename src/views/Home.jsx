@@ -29,10 +29,12 @@ const Home = () => {
         I sometimes build stuff for{' '}
         <span className="accentColor platformText">{platform}</span>
       </h3>
-      <p className="col-sm-3">
-        I'm a web developer based in germany, that is currently working on great
-        tourism experiences at WORKNAME
-      </p>
+      <div className="columns">
+        <p className="column is-half">
+          I'm a web developer based in germany, that is currently working on
+          great tourism experiences at WORKNAME
+        </p>
+      </div>
       <a className="btn" href="#section-about">
         Get to know me!
       </a>

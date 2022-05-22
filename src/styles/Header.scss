@@ -2,11 +2,9 @@
 
 header {
   h1 {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     color: variables.$main-colour;
     margin: 0 0 0 1em;
+    font-size: 2em;
   }
 }
 
@@ -14,12 +12,6 @@ header {
   display: flex;
   align-items: center;
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 8vh;
   border-bottom: 1px solid variables.$complimentary-colour;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: left;
-  // justify-content: center;
-  // font-size: calc(10px + 2vmin);
-  // color: white;
 }

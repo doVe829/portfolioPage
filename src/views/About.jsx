@@ -1,4 +1,3 @@
-import '../styles/About.scss';
 const About = () => {
   const texts = [
     `My name is Dominik and I build stuff. Mostly on the web. I always had
@@ -22,10 +21,12 @@ const About = () => {
   return (
     <section id="section-about">
       <h2>About me.</h2>
-      <div>
-        {texts.map((text) => {
-          return <p className="col-8">{text}</p>;
-        })}
+      <div className="columns">
+        <div className="column is-half">
+          {texts.map((text, index) => (
+            <p key={index}>{text}</p>
+          ))}
+        </div>
       </div>
     </section>
   );
