@@ -37,16 +37,19 @@ const Projects = () => {
       name: 'Covid Info EU/GER',
       additionalInfos: 'Bla',
       hasLink: false,
+      stack: 'vue',
     },
     {
       name: 'Print View',
       additionalInfos: 'Bla',
       hasLink: false,
+      stack: 'vue',
     },
     {
       name: 'Request',
       additionalInfos: 'Bla',
       hasLink: false,
+      stack: 'vue',
     },
   ];
 
