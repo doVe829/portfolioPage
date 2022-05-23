@@ -1,35 +1,40 @@
+import '../styles/ItemGallery.scss';
+import { ReactComponent as GithubIcon } from '../icons/githubIcon.svg';
+import IconComponent from './IconComponent';
 const x = [{ name: 'XD', additionalInfos: 'ROLF' }];
 
 const ItemGallery = ({ itemList = x, title = 'lolo' }) => {
   return (
-    <div>
-      <h2>{title}</h2>
+    <div className="mt-5">
+      <h2 className="mb-3">{title}</h2>
       <div className="columns">
         {itemList.map((item, index) => {
-          const { name, link, additionalInfos } = item;
+          const { name, link, additionalInfos, stack } = item;
           return (
-            <div className="column is-3" key={index}>
-              <div className="card">
-                {/* <div className="card-image">
-            <figure className="image is-4by3">
-              <img
-                src="https://bulma.io/images/placeholders/1280x960.png"
-                alt="Placeholder image"
-              />
-            </figure>
-          </div> */}
+            <div className="column" key={index}>
+              <div className="card cardEqualHeight">
+                <div className="card-image">
+                  <figure className="image is-4by3">
+                    <IconComponent stackName={stack} />
+                    <img
+                      src="https://bulma.io/images/placeholders/1280x960.png"
+                      alt="Placeholder image"
+                    />
+                  </figure>
+                </div>
                 <div className="card-content">
-                  <p className="title is-4">{name}</p>
+                  <div className="columns">
+                    <div className="column title has-text-centered">{name}</div>
+                  </div>
 
                   <div className="content">
-                    {additionalInfos}
-                    <a href="#">
-                      <img
-                        src="src/icons/githubIcon.svg"
-                        alt="The github octocat"
-                      />
+                    <div className="infoBox">{additionalInfos}</div>
+                    <a className="githubLink" href="#">
+                      <div className="mt-5 link columns">
+                        <GithubIcon className="pt-2 column is-2" />
+                        <span className="column is-10">Check on github</span>
+                      </div>
                     </a>
-                    <br />
                   </div>
                 </div>
               </div>

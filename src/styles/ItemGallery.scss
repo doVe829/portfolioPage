@@ -1,0 +1,24 @@
+@use 'variables';
+
+.githubLink {
+  display: block;
+}
+
+.cardEqualHeight {
+  height: 100%;
+}
+
+.link:hover {
+  > span,
+  svg {
+    fill: variables.$complimentary-colour;
+    color: variables.$complimentary-colour;
+  }
+}
+.frameworkIcon {
+  position: absolute;
+}
+
+.infoBox {
+  height: 100%;
+}

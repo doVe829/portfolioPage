@@ -3,28 +3,32 @@ import ItemGallery from '../components/ItemGallery';
 const Projects = () => {
   const privateProjects = [
     {
-      name: 'Svelte Playstation 5 Scraper',
+      name: 'Playstation 5 Scraper',
       link: '',
       additionalInfos: 'The reason bla',
       hasLink: true,
+      stack: 'svelte',
     },
     {
-      name: 'Kotlin Advent of code',
+      name: 'Advent of code',
       link: '',
       additionalInfos: 'The reason bla',
       hasLink: true,
+      stack: 'kotlin',
     },
     {
       name: 'Mood Diary',
       link: '',
       additionalInfos: 'The reason bla',
       hasLink: true,
+      stack: 'vue',
     },
     {
       name: 'API Test',
       link: '',
       additionalInfos: 'Bla',
       hasLink: true,
+      stack: 'vue',
     },
   ];
 
