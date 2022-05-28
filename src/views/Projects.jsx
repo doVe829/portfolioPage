@@ -9,7 +9,7 @@ const Projects = () => {
   );
   const privateProjects = [
     {
-      name: 'Playstation 5 Scraper',
+      name: 'PS 5 Scraper',
       link: 'https://github.com/doVe829/sveltePs5Scraper',
       additionalInfos:
         'Things I learned building this, was a bit of svelte and the use of puppeteer to scrape pages',

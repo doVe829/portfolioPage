@@ -16,7 +16,7 @@ const ItemGallery = ({ itemList, title, introText }) => {
           const { name, link, additionalInfos, stack } = item;
           return (
             <div className="column" key={index}>
-              <div className="card cardEqualHeight">
+              <div className="card equalHeight">
                 <div className="card-image">
                   <figure className="image is-4by3">
                     <IconComponent stackName={stack} />
@@ -32,10 +32,10 @@ const ItemGallery = ({ itemList, title, introText }) => {
                   </div>
 
                   <div className="content">
-                    <div className="infoBox">{additionalInfos}</div>
+                    <div className="equalHeight">{additionalInfos}</div>
                     <a className="githubLink" href="#">
-                      <div className="mt-5 link columns infoBox">
-                        <GithubIcon className="pt-2 column is-2" />
+                      <div className="mt-5 link columns is-mobile equalHeight">
+                        <GithubIcon className="pt-2 column is-2 logoHeight" />
                         <span className="column is-10">Check on github</span>
                       </div>
                     </a>

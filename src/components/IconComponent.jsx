@@ -2,7 +2,7 @@ import { ReactComponent as VueLogo } from '../icons/vue.svg';
 import { ReactComponent as SvelteLogo } from '../icons/svelte.svg';
 import { ReactComponent as KotlinLogo } from '../icons/kotlin.svg';
 const IconComponent = ({ stackName }) => {
-  const classes = 'frameworkIcon column is-2';
+  const classes = 'frameworkIcon column is-2 logoHeight';
   if (stackName === 'vue') {
     return <VueLogo className={classes} />;
   }
