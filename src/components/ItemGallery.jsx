@@ -1,12 +1,16 @@
 import '../styles/ItemGallery.scss';
 import { ReactComponent as GithubIcon } from '../icons/githubIcon.svg';
 import IconComponent from './IconComponent';
-const x = [{ name: 'XD', additionalInfos: 'ROLF' }];
 
-const ItemGallery = ({ itemList = x, title = 'lolo' }) => {
+const ItemGallery = ({ itemList, title, introText }) => {
   return (
     <div className="mt-5">
-      <h2 className="mb-3">{title}</h2>
+      <h2 className="mb-3 has-text-centered">{title}</h2>
+      {introText ? (
+        <div className="is-text-centered mb-3">{introText}</div>
+      ) : (
+        ''
+      )}
       <div className="columns">
         {itemList.map((item, index) => {
           const { name, link, additionalInfos, stack } = item;
@@ -30,7 +34,7 @@ const ItemGallery = ({ itemList = x, title = 'lolo' }) => {
                   <div className="content">
                     <div className="infoBox">{additionalInfos}</div>
                     <a className="githubLink" href="#">
-                      <div className="mt-5 link columns">
+                      <div className="mt-5 link columns infoBox">
                         <GithubIcon className="pt-2 column is-2" />
                         <span className="column is-10">Check on github</span>
                       </div>
